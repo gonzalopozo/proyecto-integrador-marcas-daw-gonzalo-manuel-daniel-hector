@@ -37,3 +37,71 @@ header ul li a:visited{
     bottom: 50px;
     right: 70px;
 }
+
+/* .contenedor-titulo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+.contenedor-titulo {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin: 80px auto 0 auto;
+    text-align: center;
+}
+
+.contenedor-titulo h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;
+
+}
+
+.contenedor-titulo h3 {
+    margin-top: 10px;
+    align-self: center;
+    font-size: 24px;
+}
+
+.contenedor-alianza-horda {
+    background-color: #1C1C1C;
+    width: 100vw;
+    color: white;
+    margin-top: 80px;
+}
+
+.barra-separadora {
+    border-top: 10px double #8c8b8b;
+}
+
+.contenedor-alianza, .contenedor-horda {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 70% 30%;
+    grid-gap: 10px; 
+    width: 85%;
+    height: 400px;
+    margin: 80px auto 0 auto;
+    padding: 30px 0 30px 0;
+}
+
+.contenedor-alianza-texto, .contenedor-horda-texto {
+    background-color: #232323;
+    border-radius: 15px;
+}
+
+.contenedor-alianza-imagen, .contenedor-horda-imagen {
+    background-color: #232323;
+    border-radius: 15px;
+}
+
+.contenedor-alianza-imagen img, .contenedor-horda-imagen img {
+    width: 50%;
+}
+
+
