@@ -90,6 +90,17 @@ header ul li a:visited{
     padding: 30px 0 30px 0;
 }
 
+.contenedor-horda {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30% 70%;
+    grid-gap: 10px; 
+    width: 85%;
+    height: 400px;
+    margin: 80px auto 0 auto;
+    padding: 30px 0 30px 0;
+}
+
 .contenedor-alianza-texto, .contenedor-horda-texto {
     background-color: #232323;
     border-radius: 15px;
@@ -100,8 +111,64 @@ header ul li a:visited{
     border-radius: 15px;
 }
 
-.contenedor-alianza-imagen img, .contenedor-horda-imagen img {
+.contenedor-alianza-imagen img{
     width: 50%;
+    position: relative; /*Cambiar esto */
+    left:100px;
+    top: 5px;
 }
 
+.contenedor-alianza-logo img{
+    width: 20%;
+    position: relative; /*Cambiar esto */
+    left:1400px;
+    top: -650px;
+}
+
+.contenedor-alianza-logoHorda img{
+    width: 16%;
+    position: relative; /*Cambiar esto */
+    left:-500px;
+    top: -850px;
+}
+
+.contenedor-horda-imagen img {
+    width:100%;
+    position: relative; /*Cambiar esto */
+    left:20px;
+    top: 70px;
+}
+
+.contenedor-alianza-texto h1 {
+    margin-top: 10px;
+    margin-left: 15px;
+    background: linear-gradient(to right, rgb(85, 158, 241), rgb(243, 183, 52)); /* Degradado de negro a rojo */
+    -webkit-background-clip: text; /* Aplicar el fondo solo al texto */
+    -webkit-text-fill-color: transparent;
+}
+
+.contenedor-horda-texto h1{
+    margin-top: 10px;
+    margin-left: 740px;
+    background: linear-gradient(to right, rgb(218, 54, 54), rgb(255, 255, 255)); /* Degradado de negro a rojo */
+    -webkit-background-clip: text; /* Aplicar el fondo solo al texto */
+    -webkit-text-fill-color: transparent;
+}
+
+.contenedor-alianza-texto h3, .contenedor-horda-texto h3 {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.copyright{
+    background-color: #1C1C1C;
+    color:whitesmoke;
+    text-align: center;
+}
+
+.logo-footer img{
+    width:40px;
+    margin-left: -1030px;
+    margin-top: -150px;
+}
 

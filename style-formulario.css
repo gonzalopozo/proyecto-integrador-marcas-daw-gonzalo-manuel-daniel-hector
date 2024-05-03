@@ -1,0 +1,90 @@
+/* Ajustar todo el contenido a los márgenes */
+*{
+    box-sizing: border-box;   
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    background: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+
+.formulario{
+    /* Las dos líneas comendatas, relative, y lef 500px, eran porque había puesto el formulario a la derecha para que se viera también al chico y quedaba muy chulo,
+    pero al hacerlo, no sé por qué, la página dejaba de "ser responsive" */
+    /* position: relative; */
+    background:beige;
+    margin-top: 100px;
+    /* left: 500px; */
+}
+h1{
+    padding-top: 20px;
+    text-align: center;
+    color:cornflowerblue; 
+    font-size: 48px;
+}
+
+img{
+    padding-top: 4px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+}
+
+input[type="text"], input[type="password"]{
+    text-align: center;
+    font-size: 24px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid beige;
+}
+
+.button{
+    border: none;
+    width: 100%;
+    font-size: 24px;
+    color:white;
+    background-color: blueviolet;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.button:hover{
+    background-color: aquamarine;
+}
+
+p{
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    color:blue;
+    font-weight: 600px;
+}
+
+.link:hover{
+    color:aquamarine
+}
+
+@media(min-width:768px){
+    .formulario{
+        margin-top: 150px;
+        width: 500px;
+        margin: auto;
+        border-radius: 2%;
+    }
+}
