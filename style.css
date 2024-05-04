@@ -7,9 +7,16 @@
 
 /* TODO:   */
 
+body {
+    background-color: #FDF0D1;
+}
 
-#personajes{
+#titulo {
+    font-family: "Bebas Neue", sans-serif;
     text-align: center;
+    font-size: 60px;
+    margin: 30px 0 10px 0;
+    letter-spacing: 3px;
 }
 
 header {
@@ -35,6 +42,10 @@ header ul li a {
 
 header ul li a:visited{
     color:black;
+}
+
+header ul li a:link {
+    color: black;
 }
 
 .boton-up{
@@ -191,6 +202,7 @@ header ul li a:visited{
 .contenedor-noticias {
     margin-top: 80px;
     width: 100vw;
+    margin-bottom: 30px;
 }
 
 .contenedor-noticias h2 {
@@ -215,7 +227,7 @@ header ul li a:visited{
 }
 
 .contenedor-noticias-grid div {
-    background-color: greenyellow;
+    background-color: #252525;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -225,12 +237,15 @@ header ul li a:visited{
     font-family: "Bebas Neue", sans-serif;
     font-size: 24px;
     margin: 10px;
+    color: white;
 }
 
 .contenedor-noticias-grid div p {
     text-align: center;
     width: 80%;
     align-self: center;
+    color: white;
+
 }
 
 .contenedor-noticias-grid div .contenedor-imagen {
@@ -243,8 +258,8 @@ header ul li a:visited{
 }
 
 footer {
-    margin-top: 50px;
-    height: 70px;
+    /* margin-top: 50px; */
+    /* height: 70px; */
     background-color: #1C1C1C;
     color:whitesmoke;
     text-align: center;
@@ -317,22 +332,32 @@ footer {
     height: 250px;
     position: relative;
     overflow: hidden;
+    /* border-radius: 5px; */
+    display: flex;
+    justify-content: center;
 }
+
+.ficha .caratula:hover {
+    border-radius: 5px;
+}
+
 .ficha .caratula img{
+    align-self: center;
     height: 250px;
-    display: block;
+    /* display: block; */
     margin: auto;
     position: relative;
     top: 40px;
     z-index: 1;
     filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
     transition: all ease 400ms;
+    
 }
 .ficha:hover .caratula img{
     top: 0px;
     filter: none;
 }
-.ficha .img_back{
+/*.ficha .img_back{
     width: 100%;
     height: 200px;
     position: absolute;
@@ -342,10 +367,10 @@ footer {
     border-radius: 20px;
     transition: all ease 300ms;
 }
-/* Pseudo_clase :nth-of-type() en CSS, selecciona uno o más elementos de un tipo dado,
-puede ser p, img, videos , etc., en función de su posición y los situa entre un grupo de hermanos */
+Pseudo_clase :nth-of-type() en CSS, selecciona uno o más elementos de un tipo dado,
+puede ser p, img, videos , etc., en función de su posición y los situa entre un grupo de hermanos 
 .ficha:nth-of-type(1) .img_back{
-    background-image: url(img/fondo-galaxia-acuarela-pintada-mano_52683-63443.avif);
+    background-image: url(img/enano.jpg);
 }
 .ficha:nth-of-type(2) .img_back{
     background-image: url(img/fondo-galaxia-acuarela-pintada-mano_52683-63443.avif);
@@ -363,6 +388,7 @@ puede ser p, img, videos , etc., en función de su posición y los situa entre u
     bottom: -40px;
     border-radius: 20px;
 }
+*/
 .ficha .info{
     background: whitesmoke;
     margin-top: -10px;
@@ -380,6 +406,9 @@ puede ser p, img, videos , etc., en función de su posición y los situa entre u
 .ficha .info p{
     margin-top: 10px;
     text-align: justify;
+    height: 100px;
+    overflow: hidden;
+    
 }
 .container_alianza .ficha .info input{
     display: block;
@@ -414,4 +443,240 @@ puede ser p, img, videos , etc., en función de su posición y los situa entre u
 }
 .ficha .info a{
     text-decoration: none;
+}
+
+#enano{
+    width: 100%;
+}
+
+.contenedor-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    /*Separación de márgenes con el resto de cartas*/
+    margin: 20px;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*Esto determina si la cara posterior de un elemento va a ser visible frente al usuario o no.
+    La cara posterior de un elemento siempre es un fondo transparente, permitiendo cuando es visible, que se muestre
+    una imagen de espejo de la cara frontal. Tiene la propiedad visible: significa que la cara posterior es visible, 
+    permitiendo que la cara frontal se muestre invertida.
+    Hidden: significa que la cara posterior no es visible, ocultando la cara frontal.*/
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card .front{
+    /* transform: perspective(600px) rotateY(0deg); */
+    transform: perspective(600px) rotateY(00deg);
+    box-shadow: 0px 5px 10px #000;
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Esta propiedad indica cómo el contenido de un elemento deberá ser redimensionado para ajustarse a su contenedor */
+    object-fit: cover;
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: beige;
+    background: #AC7D88;
+    text-align: center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(51, 151, 168);
+    padding: 15px;
+    color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 5px 10px #000;
+}
+
+.card .back .link{
+    border-top: 1px solid rgb(205, 127, 236);
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a{
+    color:darkred;
+}
+
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+    letter-spacing: 1px;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.contenedor-monturas {
+    margin-top: 80px;
+    width: 100vw;
+    margin-bottom: 30px;
+}
+
+.contenedor-monturas h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contenedor-monturas-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    text-align: center;
+    width: 65%;
+    height: 700px;
+    margin: 0 auto 0 auto;
+    /* justify-items: center; */
+    /* align-items: center; */
+}
+
+.contenedor-monturas-grid div {
+    background-color: #252525;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-monturas-grid div:hover {
+    background-color: #353535;
+    cursor: pointer;
+}
+
+.contenedor-monturas-grid div h4 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    margin: 10px;
+    color: white;
+}
+
+.contenedor-monturas-grid div p {
+    text-align: center;
+    width: 80%;
+    align-self: center;
+    color: white;
+
+}
+
+.contenedor-monturas-grid div .contenedor-imagen {
+    /* width: 80%; */
+    max-width: 100%;
+    min-height: 50%;
+    align-self: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contenedor-monturas-grid div .contenedor-imagen img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+}
+
+.contenedor-mascotas {
+    margin-top: 350px;
+    width: 100vw;
+    margin-bottom: 200px;
+}
+
+.contenedor-mascotas h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contenedor-mascotas-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    text-align: center;
+    width: 65%;
+    height: 700px;
+    margin: 0 auto 0 auto;
+    /* justify-items: center; */
+    /* align-items: center; */
+}
+
+.contenedor-mascotas-grid div {
+    background-color: #252525;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-mascotas-grid div:hover {
+    background-color: #353535;
+    cursor: pointer;
+}
+
+.contenedor-mascotas-grid div h4 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    margin: 10px;
+    color: white;
+}
+
+.contenedor-mascotas-grid div p {
+    text-align: center;
+    width: 80%;
+    align-self: center;
+    color: white;
+}
+
+.contenedor-mascotas-grid div .contenedor-imagen {
+    /* width: 80%; */
+    width: 100%;
+    max-width: 100%;
+    min-height: 65%;
+    align-self: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contenedor-mascotas-grid div .contenedor-imagen img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+
 }
