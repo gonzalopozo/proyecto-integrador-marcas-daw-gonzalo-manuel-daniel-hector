@@ -1,0 +1,104 @@
+/* Resetear margen y relleno del body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el título */
+h1 {
+    font-family: 'Bebas Neue', sans-serif; /* Aplicar la fuente Bebas Neue */
+}
+
+/* Estilos para el título de la sección "Quienes Somos" */
+.tituloQS {
+    text-align: center;
+    font-size: 25px;
+    color: #333;
+    width: 80%;
+    margin: 20px auto 0; /* Cambiado el margen superior a 20px y eliminado el margen inferior */
+}
+
+/* Estilos para el texto de la sección "Quienes Somos" */
+.textoQS {
+    text-align: justify;
+    margin: 20px auto; /* Modificado el margen para centrar verticalmente el texto */
+    font-size: 20px;
+    color: #333;
+    width: 80%;
+}
+
+/* Estilos para el contenedor principal */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Añadido margen superior */
+    margin-bottom: 20px; /* Añadido margen inferior */
+    padding: 20px; /* Añadir un relleno alrededor del contenido */
+}
+
+/* Estilos para la cuadrícula de perfiles */
+.cuadricula-perfiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilos para las tarjetas de perfil */
+.perfil {
+    width: 200px; /* Ancho fijo para las tarjetas */
+    margin: 20px; /* Aumentar el espacio entre las tarjetas */
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+    position: relative; /* Para posicionar el icono de GitHub */
+    z-index: 1; /* Asegurar que las tarjetas estén por encima del fondo */
+}
+
+/* Efecto hover para cada perfil */
+.perfil:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilos para las imágenes de perfil */
+.imagen-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s;
+}
+
+/* Efecto hover para las imágenes de perfil */
+.perfil:hover .imagen-perfil img {
+    opacity: 0.5;
+}
+
+/* Estilos para el nombre y la biografía de perfil */
+.nombre-perfil {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+/* Efecto hover para el nombre y la biografía de perfil */
+.perfil:hover .nombre-perfil {
+    opacity: 1;
+}
+
+/* Estilos para el icono de GitHub en las tarjetas de perfil */
+.nombre-perfil a {
+    display: block; /* Para que el enlace ocupe todo el espacio disponible */
+    text-align: center; /* Centrar el contenido horizontalmente */
+    margin-top: 10px; /* Ajustar el margen superior para separar el icono del texto */
+}
+
+.nombre-perfil a img {
+    width: 30px; /* Ajustar el ancho del icono según sea necesario */
+    height: auto; /* Mantener la proporción original de la imagen */
+}
