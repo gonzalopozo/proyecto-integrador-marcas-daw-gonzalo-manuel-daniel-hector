@@ -70,14 +70,14 @@ header ul li a:visited{
 
 .contenedor-alianza-padre {
     background-color: #002859;
-    width: 100vw;
+    width: 100%;
     color: white;
     /* margin-top: 80px; */
 }
 
 .contenedor-horda-padre {
     background-color: #8B1F1B;
-    width: 100vw;
+    width: 100%;
     color: white;
     /* margin-top: 80px; */
 }
@@ -183,25 +183,17 @@ header ul li a:visited{
     margin-left: 15px;
 }
 
-.copyright{
-    background-color: #1C1C1C;
-    color:whitesmoke;
-    text-align: center;
-}
-
-.logo-footer img{
-    width:40px;
-    margin-left: -1030px;
-    margin-top: -150px;
-}
-
 .contenedor-noticias {
     margin-top: 80px;
     width: 100vw;
 }
 
 .contenedor-noticias h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;
+    letter-spacing: 2px;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .contenedor-noticias-grid {
@@ -210,16 +202,53 @@ header ul li a:visited{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
     text-align: center;
-    width: 85%;
-    height: 900px;
+    width: 65%;
+    height: 1300px;
     margin: 0 auto 0 auto;
-
+    /* justify-items: center; */
+    /* align-items: center; */
 }
 
 .contenedor-noticias-grid div {
     background-color: greenyellow;
-    width: auto;
     border-radius: 15px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
+.contenedor-noticias-grid div h4 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.contenedor-noticias-grid div p {
+    text-align: center;
+    width: 80%;
+    align-self: center;
+}
+
+.contenedor-noticias-grid div .contenedor-imagen {
+    width: 80%;
+    margin-top: 10px;
+    height: 55%;
+    align-self: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+footer {
+    margin-top: 50px;
+    height: 70px;
+    background-color: #1C1C1C;
+    color:whitesmoke;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer img{
+    width:40px;
+    margin: 15px;
+}
