@@ -611,6 +611,7 @@ puede ser p, img, videos , etc., en función de su posición y los situa entre u
     width: 80%;
     align-self: center;
     color: white;
+    padding: 5px 0 10px 0;
 
 }
 
@@ -630,9 +631,9 @@ puede ser p, img, videos , etc., en función de su posición y los situa entre u
 }
 
 .contenedor-mascotas {
-    margin-top: 350px;
+    margin-top: 150px;
     width: 100vw;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .contenedor-mascotas h2 {
@@ -680,6 +681,7 @@ puede ser p, img, videos , etc., en función de su posición y los situa entre u
     width: 80%;
     align-self: center;
     color: white;
+    padding: 5px 0 10px 0;
 }
 
 .contenedor-mascotas-grid div .contenedor-imagen {
@@ -892,4 +894,10 @@ p{
     color: white;
     display: block;
     margin-top: 20px;
+}
+
+.footer-abajo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
