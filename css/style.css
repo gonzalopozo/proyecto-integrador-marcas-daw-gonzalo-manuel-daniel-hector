@@ -1606,14 +1606,15 @@ p{
     }
 
     .contenedor-mascotas {
-        margin-top: 1450px;
-        margin-bottom: 302px;
+        margin-top: 0px;
+        margin-bottom: 100px;
         height: auto;
     }
 
     .contenedor-mascotas-grid {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr ;
+        height: 2100px;
     }
 
     footer p {
@@ -1623,7 +1624,7 @@ p{
     .contenedor-monturas-grid {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
-        
+        height: 2100px;
     }
 
     /* CSS de Expansiones */
@@ -1661,7 +1662,7 @@ p{
         gap: 15px;
         text-align: center;
         width: 65%;
-        height: 400px;
+        height: 950px;
         margin: 50px auto 130px 120px;
     }
     
@@ -1700,7 +1701,7 @@ p{
     .cuadricula-perfiles {
         gap: 0px;
     }
-    
+
     /* CSS Contacto */
 
     .contenedor-formulario{
