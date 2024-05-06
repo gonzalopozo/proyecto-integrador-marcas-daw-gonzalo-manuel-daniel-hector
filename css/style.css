@@ -104,7 +104,7 @@ header ul li a img {
 }
 
 .barra-separadora {
-    border-top: 10px outset #8c8b8b;
+    border: 10px solid #FDF0D1;
 }
 
 .contenedor-alianza {
@@ -200,8 +200,7 @@ header ul li a img {
 }
 
 .contenedor-alianza-texto h3, .contenedor-horda-texto h3 {
-    margin-top: 30px;
-    margin-left: 15px;
+    padding: 20px 15px 20px 15px;
 }
 
 .contenedor-noticias {
@@ -743,6 +742,7 @@ puede ser p, img, videos , etc., en función de su posición y los situa entre u
     font-size: 20px;
     color: #000000;
     width: 80%;
+    font-weight: bold;
 }
 
 /* Estilos para el contenedor principal */
@@ -1001,7 +1001,7 @@ p{
     }
 
     .contenedor-horda-texto h1 {
-        width: 100%;
+        width: 50%;
         margin-left: 525px;
     }
 
@@ -1048,4 +1048,740 @@ p{
     .contenedor-formulario {
         margin-top: 50px;
     }
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 20px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url('../icon/menu.png');
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+
+    .toggle.active {
+        position: fixed;
+        right: 20px;
+        margin-top: 20px;
+        background: url('../icon/close.png');
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    header ul.navegacion.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #FFF;
+        z-index: 10;
+    }
+    
+    header ul li a {
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+
+    /* #alianza {
+        left: 11%;
+        top: 116%;
+        height: 70px;
+        width: auto;
+    }
+
+    #horda {
+        right: 11%;
+        height: 70px;
+        width: auto;
+        top: 172%;
+    } */
+
+    #alianza {
+        display: none;
+    }
+
+    #horda {
+        display: none;
+    }
+
+    .contenedor-noticias-grid {
+        display: none;
+    }
+    
+    .contenedor-titulo {
+        width: 88%;
+    }
+
+    .contenedor-alianza {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+    .contenedor-alianza-imagen img {
+        top: 14%;
+        left: 26%;
+    }
+
+    .contenedor-horda {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+    .contenedor-horda-imagen img {
+        top: 28%;
+        left: 8%;
+    }
+
+    .contenedor-horda-texto h1 {
+        width: 69%;
+        margin-left: 28%;
+    }
+
+
+    .contenedor_total{
+        display: flex;
+        margin-top: 0px;
+    }
+    
+    .enfrentamiento{
+        width: 100%;
+        height: 424px;
+    }
+    
+    #enfrentados{
+        width: 100%;
+    }
+    
+    .container_alianza{
+        /* background-image: url(img/fondobatman.jpg); */
+        max-width: 50%;
+        /* width: 50; */
+        margin: auto;
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #002859;
+        margin-right: 0%;
+    }
+    
+    .container_horda{
+        /* background-image: url(img/fondobatman.jpg); */
+        max-width: 50%;
+        width: 50%;
+        margin: auto;
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #8B1F1B;
+        margin-left: 0%;
+    }
+    
+
+    /* CSS PRODUCTOS */
+    
+    .contenedor-cards {
+        flex-wrap: wrap;
+    }
+
+    .contenedor-mascotas {
+        margin-top: 380px;
+        margin-bottom: 302px;
+    }
+
+    .contenedor-mascotas-grid {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer p {
+        width: 70%;
+    }
+
+    .contenedor-monturas-grid {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    /* CSS de Expansiones */
+
+    .contenedor-video-titulo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        width: 900px;
+        text-align: center;
+        
+    }
+    
+    .contenedor-video {
+        border: 11px solid #41B06E;
+        border-radius: 5%;
+        overflow: hidden;
+        display: block;
+        margin: auto;
+        width: 609px; 
+        height: 396px;
+        margin: 30px 0 0 150px;
+    }
+    
+    .contenedor-video iframe {
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    .contenedor-expansiones {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        text-align: center;
+        width: 65%;
+        height: 400px;
+        margin: 50px auto 130px 120px;
+    }
+    
+    .contenedor-expansiones div {
+        background-color: #252525;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contenedor-expansiones div h4 {
+        /* color:rgb(49, 101, 212); */
+        color: #8DECB4;
+        font-size: 30px;
+        font-family: "Bebas Neue", sans-serif;
+    }
+    
+    .contenedor-expansiones div p {
+        color:whitesmoke;
+    }
+    
+    .contenedor-expansiones div .contenedor-foto {
+        width: 100%;
+        height: 136px;
+        align-self: center;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .contenedor-expansiones div .contenedor-foto img {
+        width: 100%;
+    }
+
+    /* CSS Quienes somos */
+    .cuadricula-perfiles {
+        gap: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* CSS Contacto */
+
+    .contenedor-formulario{
+        display: block;
+        margin-top: 100px; 
+        margin-bottom: 100px;
+    }
+    
+    
+    .contenedor_contacto{
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .formulario{
+        background: #353535;
+        display: block;
+        margin-top: 20px; 
+        /* top: 500px; */
+        /* left: 500px; */
+    }
+    .titulo_registro{
+        padding-top: 20px;
+        text-align: center;
+        color: white; 
+        font-size: 48px;
+    }
+    
+    .icon{
+        padding-top: 4px;
+        width: 45px;
+        height: 45px;
+        position: relative;
+        top: 12px;
+        text-align: center;
+    }
+    
+    input[type="text"], input[type="password"]{
+        text-align: center;
+        font-size: 24px;
+        width: 80%;
+        padding: 10px;
+        border: none;
+    }
+    
+    .input-contenedor_contacto{
+        margin-bottom: 15px;
+        border: 1px solid #353535;
+    }
+    
+    .button{
+        border: none;
+        width: 100%;
+        font-size: 24px;
+        color: #353535;
+        background-color: beige;
+        padding: 15px 20px;
+        border-radius: 5px;
+        cursor:pointer;
+    }
+    
+    .button:hover{
+        background-color: white;
+    }
+    
+    p{
+        text-align: center;
+    }
+    
+    .link{
+        text-decoration: none;
+        color:beige;
+        font-weight: 600px;
+    }
+    
+    .link:hover{
+        color:aquamarine
+    }
+
+   /* CSS Contacto Dos */
+
+}
+
+
+@media (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url('../icon/menu.png');
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+
+    .toggle.active {
+        position: fixed;
+        right: 20px;
+        margin-top: 20px;
+        background: url('../icon/close.png');
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    header ul.navegacion.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #FFF;
+        z-index: 10;
+    }
+    
+    header ul li a {
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+
+    /* #alianza {
+        left: 11%;
+        top: 116%;
+        height: 70px;
+        width: auto;
+    }
+
+    #horda {
+        right: 11%;
+        height: 70px;
+        width: auto;
+        top: 172%;
+    } */
+
+    #alianza {
+        display: none;
+    }
+
+    #horda {
+        display: none;
+    }
+
+    .contenedor-noticias-grid {
+        display: none;
+    }
+    
+    .contenedor-titulo {
+        width: 88%;
+    }
+
+    .contenedor-alianza {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+    .contenedor-alianza-imagen img {
+        top: 13%;
+        left: 23%;
+        width: 62%;
+    }
+
+    .contenedor-horda {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+    .contenedor-horda-imagen img {
+        top: 30%;
+        left: 5%;
+        width: 111%;
+    }
+
+    .contenedor-horda-texto h1 {
+        width: 74%;
+        margin-left: 3%;
+    }
+
+
+    .contenedor_total{
+        display: flex;
+        margin-top: 0px;
+        flex-wrap: wrap;
+    }
+    
+    .enfrentamiento{
+        width: 100%;
+        height: 246px;
+    }
+    
+    #enfrentados{
+        width: 100%;
+    }
+    
+    .container_alianza{
+        /* background-image: url(img/fondobatman.jpg); */
+        max-width: 100%;
+        /* width: 50; */
+        margin: auto;
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #002859;
+        margin-right: 0%;
+    }
+    
+    .container_horda{
+        /* background-image: url(img/fondobatman.jpg); */
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #8B1F1B;
+        margin-left: 0%;
+    }
+    
+    .ficha{
+        width: 350px;
+        margin: 10px;
+        transition: all ease 300ms;
+    }
+    .ficha:hover{
+        width: 350px;
+    }
+    .ficha .caratula{
+        width: 100%;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+        /* border-radius: 5px; */
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ficha .caratula:hover {
+        border-radius: 5px;
+    }
+    
+    .ficha .caratula img{
+        align-self: center;
+        height: 250px;
+        /* display: block; */
+        margin: auto;
+        position: relative;
+        top: 40px;
+        z-index: 1;
+        filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+        transition: all ease 400ms;
+        
+    }
+    .ficha:hover .caratula img{
+        top: 0px;
+        filter: none;
+    }
+    
+    .ficha .info{
+        background: whitesmoke;
+        margin-top: -10px;
+        padding: 20px;
+        border-radius: 0px 0px 20px 20px;
+        transition: all ease 300ms;
+    }
+    .ficha:hover .info{
+        padding: 40px;
+    }
+    .ficha .info h2{
+        margin-top: 10px;
+        /* Insertar tipografía */
+    }
+    .ficha .info p{
+        margin-top: 10px;
+        text-align: justify;
+        height: 100px;
+        overflow: hidden;
+        
+    }
+
+    /* CSS PRODUCTOS */
+    
+    .contenedor-cards {
+        flex-wrap: wrap;
+    }
+
+    .contenedor-mascotas {
+        margin-top: 1450px;
+        margin-bottom: 302px;
+        height: auto;
+    }
+
+    .contenedor-mascotas-grid {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr ;
+    }
+
+    footer p {
+        width: 70%;
+    }
+
+    .contenedor-monturas-grid {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        
+    }
+
+    /* CSS de Expansiones */
+
+    .contenedor-video-titulo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        width: 576px;
+        text-align: center;
+        align-content: center;
+    }
+    
+    .contenedor-video {
+        border: 11px solid #41B06E;
+        border-radius: 5%;
+        overflow: hidden;
+        display: block;
+        margin: auto;
+        width: 530px; 
+        height: 310px;
+        margin: 30px 0 0 0px;
+    }
+    
+    .contenedor-video iframe {
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    .contenedor-expansiones {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        text-align: center;
+        width: 65%;
+        height: 400px;
+        margin: 50px auto 130px 120px;
+    }
+    
+    .contenedor-expansiones div {
+        background-color: #252525;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contenedor-expansiones div h4 {
+        /* color:rgb(49, 101, 212); */
+        margin-top: 5px;
+        color: #8DECB4;
+        font-size: 30px;
+        font-family: "Bebas Neue", sans-serif;
+    }
+    
+    .contenedor-expansiones div p {
+        color:whitesmoke;
+    }
+    
+    .contenedor-expansiones div .contenedor-foto {
+        width: 100%;
+        height: 136px;
+        align-self: center;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .contenedor-expansiones div .contenedor-foto img {
+        width: 100%;
+    }
+
+    /* CSS Quienes somos */
+    .cuadricula-perfiles {
+        gap: 0px;
+    }
+    
+    /* CSS Contacto */
+
+    .contenedor-formulario{
+        display: block;
+        margin-top: 100px; 
+        margin-bottom: 100px;
+        width: 500px;
+        margin-left: 38px;
+    }
+    
+    
+    .contenedor_contacto{
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .formulario{
+        background: #353535;
+        display: block;
+        margin-top: 20px; 
+        /* top: 500px; */
+        /* left: 500px; */
+        width: 500px;
+        
+    }
+    .titulo_registro{
+        padding-top: 20px;
+        text-align: center;
+        color: white; 
+        font-size: 48px;
+    }
+    
+    .icon{
+        padding-top: 4px;
+        width: 45px;
+        height: 45px;
+        position: relative;
+        top: 12px;
+        text-align: center;
+    }
+    
+    input[type="text"], input[type="password"]{
+        text-align: center;
+        font-size: 24px;
+        width: 80%;
+        padding: 10px;
+        border: none;
+    }
+    
+    .input-contenedor_contacto{
+        margin-bottom: 15px;
+        border: 1px solid #353535;
+    }
+    
+    .button{
+        border: none;
+        width: 100%;
+        font-size: 24px;
+        color: #353535;
+        background-color: beige;
+        padding: 15px 20px;
+        border-radius: 5px;
+        cursor:pointer;
+    }
+    
+    .button:hover{
+        background-color: white;
+    }
+    
+    p{
+        text-align: center;
+    }
+    
+    .link{
+        text-decoration: none;
+        color:beige;
+        font-weight: 600px;
+    }
+    
+    .link:hover{
+        color:aquamarine
+    }
+
 }
