@@ -988,3 +988,64 @@ p{
 #dani img {
     height: 40vh;
 }
+
+@media only screen and (max-width: 1537px) {
+    #alianza {
+        left: 1260px;
+        top: 80px;
+    }
+
+    #horda {
+        right: 1260px;
+        top: 80px;
+    }
+
+    .contenedor-horda-texto h1 {
+        width: 100%;
+        margin-left: 525px;
+    }
+
+    .contenedor-alianza-imagen img {
+        top: 106px;
+    }
+    
+    .contenedor-horda-imagen img {
+        top: 122px;
+    }
+
+    .contenedor-expansiones {
+        height: 410px;
+        margin: 50px auto 80px auto;
+    }
+
+    .contenedor-expansiones div .contenedor-foto {
+        margin-bottom: 0px;
+    }
+
+    .contenedor-expansiones div h4  {
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-expansiones div p {
+        margin: 0 10px 15px 10px;
+    }
+
+    .enfrentamiento {
+        height: 550px;
+    }
+
+    .textoQS p {
+        font-size: 18px;
+    }
+
+    .contenedor {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .contenedor-formulario {
+        margin-top: 50px;
+    }
+}
