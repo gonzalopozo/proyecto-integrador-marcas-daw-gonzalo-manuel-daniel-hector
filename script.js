@@ -4,3 +4,7 @@ function toggleMenu(){
     menuToggle.classList.toggle('active');
     navegacion.classList.toggle('active');
 }
+
+function subir() {
+    window.scrollTo(0, 0);
+}

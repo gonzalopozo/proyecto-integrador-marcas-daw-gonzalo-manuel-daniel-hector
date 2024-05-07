@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* TODO:   */
@@ -57,6 +58,10 @@ header ul li a img {
     position: fixed;
     bottom: 50px;
     right: 70px;
+}
+
+.boton-up a img {
+    cursor: pointer;
 }
 
 /* .contenedor-titulo {
