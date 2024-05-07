@@ -55,6 +55,7 @@ header ul li a img {
 }
 
 .boton-up{
+    z-index: 5;
     position: fixed;
     bottom: 50px;
     right: 70px;
@@ -82,10 +83,77 @@ header ul li a img {
     text-align: center;
 }
 
+/* .contenedor-titulo h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 124px;
+    margin-top: -20px;
+    background: linear-gradient(to right, rgb(235, 81, 81), rgb(85, 158, 241));
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}*/
+
 .contenedor-titulo h1 {
+    font-size:5em;
+    user-select:none;
+}
+
+.contenedor-titulo h1 span { 
+    display:inline-block; 
+    animation:float .3s ease-in-out infinite; 
+    font:bold 7.5vw/1.6 "Bebas Neue", sans-serifº;
+}
+    
+@keyframes float {  
+    0%,100%{ transform:none; }
+    33%{ transform:translateY(-1px) rotate(-2deg); }
+    66%{ transform:translateY(1px) rotate(2deg); }
+}
+
+.contenedor-titulo:hover span { 
+    animation:bounce .6s; 
+}
+
+@keyframes bounce {
+        0%,100%{ transform:translate(0); }
+        25%{ transform:rotateX(20deg) translateY(2px) rotate(-3deg); }
+        50%{ transform:translateY(-20px) rotate(3deg) scale(1.1);  }
+}
+
+.contenedor-titulo h1 span:nth-child(4n) {
+    color: hsl(356, 73%, 29%);
+    text-shadow:  1px 1px hsl(356, 73%, 19%), 2px 2px hsl(356, 43%, 19%), 3px 3px hsl(356, 43%, 19%), 4px 4px hsl(356, 73%, 19%);
+}
+.contenedor-titulo h1 span:nth-child(4n-1) { 
+    color: hsl(212, 100%, 16%);
+    text-shadow:1px 1px hsl(212, 80%, 6%), 2px 2px hsl(212, 80%, 6%), 3px 3px hsl(212, 80%, 6%), 4px 4px hsl(212, 80%, 6%);
+}
+.contenedor-titulo h1 span:nth-child(4n-2) { 
+    color: hsl(130, 73%, 29%);
+    text-shadow:1px 1px hsl(130, 63%, 19%), 2px 2px hsl(130, 63%, 19%), 3px 3px hsl(130, 63%, 19%), 4px 4px hsl(115, 63%, 19%);
+}
+.contenedor-titulo h1 span:nth-child(4n-3) { 
+    color: hsl(32, 100%, 16%);
+
+    text-shadow:1px 1px hsl(26, 80%, 6%), 2px 2px hsl(26, 80%, 6%), 3px 3px hsl(26, 80%, 6%), 4px 4px hsl(26, 80%, 6%);
+}
+
+.contenedor-titulo h1 span:nth-child(2){ animation-delay:.05s; }
+.contenedor-titulo h1 span:nth-child(3){ animation-delay:.1s; }
+.contenedor-titulo h1 span:nth-child(4){ animation-delay:.15s; }
+.contenedor-titulo h1 span:nth-child(5){ animation-delay:.2s; }
+.contenedor-titulo h1 span:nth-child(6){ animation-delay:.25s; }
+.contenedor-titulo h1 span:nth-child(7){ animation-delay:.3s; }
+.contenedor-titulo h1 span:nth-child(8){ animation-delay:.35s; }
+.contenedor-titulo h1 span:nth-child(9){ animation-delay:.4s; }
+.contenedor-titulo h1 span:nth-child(10){ animation-delay:.45s; }
+.contenedor-titulo h1 span:nth-child(11){ animation-delay:.5s; }
+.contenedor-titulo h1 span:nth-child(12){ animation-delay:.55s; }
+.contenedor-titulo h1 span:nth-child(13){ animation-delay:.6s; }
+.contenedor-titulo h1 span:nth-child(14){ animation-delay:.65s; }
+
+.contenedor-titulo h2 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 48px;
-
 }
 
 .contenedor-titulo h3 {
@@ -323,6 +391,7 @@ footer {
 
 .contenedor_total{
     display: flex;
+    height: 2300px;
 }
 
 .enfrentamiento{
@@ -345,6 +414,7 @@ footer {
     justify-content: center;
     background-color: #002859;
     margin-right: 0%;
+    height: 2200px;
 }
 
 .container_horda{
@@ -358,6 +428,7 @@ footer {
     justify-content: center;
     background-color: #8B1F1B;
     margin-left: 0%;
+    height: 2200px;
 }
 
 .ficha{
@@ -742,11 +813,11 @@ puede ser p, img, videos , etc., en función de su posición y los situa entre u
 
 /* Estilos para el texto de la sección "Quienes Somos" */
 .textoQS p {
-    text-align: justify;
-    margin: 20px auto; /* Modificado el margen para centrar verticalmente el texto */
+    text-align: CENTER;
+    margin: 20px auto;
     font-size: 20px;
     color: #000000;
-    width: 80%;
+    width: 45%;
     font-weight: bold;
 }
 
@@ -996,13 +1067,11 @@ p{
 
 @media only screen and (max-width: 1537px) {
     #alianza {
-        left: 1260px;
-        top: 80px;
+        display: none;
     }
 
     #horda {
-        right: 1260px;
-        top: 80px;
+        display: none;
     }
 
     .contenedor-horda-texto h1 {
@@ -1100,6 +1169,13 @@ p{
         background-color: #FFF;
         z-index: 10;
     }
+
+    .boton-up{
+        z-index: 5;
+        position: fixed;
+        bottom: 80px;
+        right: 18px;
+    }
     
     header ul li a {
         font-size: 1.5em;
@@ -1120,6 +1196,20 @@ p{
         top: 172%;
     } */
 
+    /* #alianza {
+        top: 213%;
+        left: 10%;
+        width: auto;
+        height: 85px;
+    }
+
+    #horda {
+        top: 286%;
+        right: 10%;
+        width: auto;
+        height: 85px;
+    } */
+
     #alianza {
         display: none;
     }
@@ -1128,12 +1218,37 @@ p{
         display: none;
     }
 
-    .contenedor-noticias-grid {
-        display: none;
+    #alianzaPeq {
+        position: relative;
+        width: auto;
+        height: 85px;
+        left: 3%;
+        top: -58%;
     }
-    
+
+    #hordaPeq {
+        position: relative;
+        width: auto;
+        height: 85px;
+        left: 90%;
+        top: -58%;
+    }
+
+    .contenedor-noticias {
+        margin-bottom: 1030px;
+    }
+
+    .contenedor-noticias-grid {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .contenedor-titulo {
         width: 88%;
+    }
+
+    .textoQS p {
+        width: 77%;
     }
 
     .contenedor-alianza {
@@ -1145,12 +1260,6 @@ p{
     .contenedor-alianza-imagen img {
         top: 14%;
         left: 26%;
-    }
-
-    .contenedor-horda {
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
-        height: 100%;
     }
 
     .contenedor-horda-imagen img {
@@ -1167,6 +1276,8 @@ p{
     .contenedor_total{
         display: flex;
         margin-top: 0px;
+        flex-wrap: wrap;
+        height: 4400px;
     }
     
     .enfrentamiento{
@@ -1189,6 +1300,7 @@ p{
         justify-content: center;
         background-color: #002859;
         margin-right: 0%;
+        height: 4400px;
     }
     
     .container_horda{
@@ -1202,7 +1314,9 @@ p{
         justify-content: center;
         background-color: #8B1F1B;
         margin-left: 0%;
+        height: 4400px;
     }
+    
     
 
     /* CSS PRODUCTOS */
@@ -1239,7 +1353,7 @@ p{
         flex-direction: column-reverse;
         width: 900px;
         text-align: center;
-        
+        margin: 0 auto;
     }
     
     .contenedor-video {
@@ -1266,9 +1380,10 @@ p{
         gap: 15px;
         text-align: center;
         width: 65%;
-        height: 400px;
-        margin: 50px auto 130px 120px;
+        height: 400px; 
+        margin: 50px auto 130px auto;
     }
+    
     
     .contenedor-expansiones div {
         background-color: #252525;
@@ -1302,10 +1417,13 @@ p{
 
     /* CSS Quienes somos */
     .cuadricula-perfiles {
-        gap: 0px;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
     }
+
+    
     
     /* CSS Contacto */
 
@@ -1386,12 +1504,80 @@ p{
         color:aquamarine
     }
 
-   /* CSS Contacto Dos */
+    .contenedor-titulo h1 {
+        font-size: 5em;
+        user-select: none;
+        padding-bottom: 70px;
+    }
 
+    .contenedor-titulo h1 span {
+        font-size: 124px;
+    }
+
+    .contenedor-titulo h3 {
+        width: 90%;
+    }
+
+    .contenedor-alianza {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-horda {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        height: 620px;
+    }
+
+    .contenedor-alianza-imagen img {
+        top: 6.5%;
+        left: 30%;
+        width: auto;
+        height: 245px;
+    }
+
+    .contenedor-horda-imagen img {
+        top: 1.5%;
+        left: 23%;
+        width: auto;
+        height: 245px;
+    }
+
+    .contenedor-horda-texto h1 {
+        width: 50%;
+        margin-left: 55%;
+    }
+
+    .footer-abajo{
+        position: static;
+    }
+
+    #dani {
+        height: 64vh;
+    }
+
+    .contenedor-noticias-grid div h4 {
+        padding: 30px 10px 30px 10px;
+        margin-bottom: 40px;
+        /* color: #8DECB4; */
+        height: 50px;
+    }
+
+    .contenedor-noticias-grid div p {
+        height: 110px;
+    }
+
+    .contenedor-noticias-grid div .contenedor-imagen {
+        margin: 10px 0 15px 0;
+    }
 }
 
 
 @media (max-width: 576px) {
+
+    .contenedor-titulo h1 span {
+        font-size: 104px;
+    }
     header {
         padding: 20px;
     }
@@ -1484,12 +1670,6 @@ p{
         width: 62%;
     }
 
-    .contenedor-horda {
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
-        height: 100%;
-    }
-
     .contenedor-horda-imagen img {
         top: 30%;
         left: 5%;
@@ -1506,6 +1686,7 @@ p{
         display: flex;
         margin-top: 0px;
         flex-wrap: wrap;
+        height: 8800px;
     }
     
     .enfrentamiento{
@@ -1626,6 +1807,7 @@ p{
         width: 70%;
     }
 
+
     .contenedor-monturas-grid {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
@@ -1703,8 +1885,33 @@ p{
     }
 
     /* CSS Quienes somos */
+    
+
+    /* Estilos para el contenedor principal */
+    .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; /* Añadido margen superior */
+    /* margin-bottom: 20px; Añadido margen inferior */
+    /* padding: 20px; Añadir un relleno alrededor del contenido */
+    height: 1420px;
+    }
+
+/* Estilos para la cuadrícula de perfiles */
     .cuadricula-perfiles {
-        gap: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    width: 100%;
+    height: 1420px;
+    align-content: center;
+    flex-direction: column;
+    }
+
+    .footer-abajo{
+        position: static;
+        margin-top: 0%;
     }
 
     /* CSS Contacto */
@@ -1790,4 +1997,6 @@ p{
         color:aquamarine
     }
 
+    
 }
+
