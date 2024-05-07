@@ -1065,6 +1065,14 @@ p{
     height: 40vh;
 }
 
+#alianzaPeq {
+    display: none;
+}
+
+#hordaPeq {
+    display: none;
+}
+
 @media only screen and (max-width: 1537px) {
     #alianza {
         display: none;
