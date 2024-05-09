@@ -1435,11 +1435,36 @@ p{
     }
 
     /* CSS Quienes somos */
-    .cuadricula-perfiles {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
+    .tituloQS h1 {
+        font-size: 60px;
+    }
+
+    .textoQS p {
+        width: 90%;
+        font-size: 35px;
+    }
+    .contenedorQS {
+        display: flex; /* Asegura que el contenedor sigue siendo un flexbox */
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+        align-items: center; /* Centra las tarjetas horizontalmente */
+    }
+    
+    .perfilQS {
+        width: 75%;
+        height: 600px;
+        margin: 6px;
+    }
+
+    .info-perfilQS {
+        bottom: -180.8px;
+    }
+
+    .info-perfilQS h2 {
+        font-size: 80px;
+    }
+
+    .info-perfilQS p {
+        font-size: 45px;
     }
 
     
@@ -1913,32 +1938,35 @@ p{
 
     /* CSS Quienes somos */
     
-
-    /* Estilos para el contenedor principal */
-    .contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 20px; /* Añadido margen superior */
-    /* margin-bottom: 20px; Añadido margen inferior */
-    /* padding: 20px; Añadir un relleno alrededor del contenido */
-    height: 1420px;
+    .tituloQS h1 {
+        font-size: 40px;
     }
 
-/* Estilos para la cuadrícula de perfiles */
-    .cuadricula-perfiles {
-    display: flex;
-    flex-wrap: wrap;
-    /* gap: 20px; */
-    width: 100%;
-    height: 1420px;
-    align-content: center;
-    flex-direction: column;
+    .textoQS p {
+        width: 90%;
+    }
+    .contenedorQS {
+        display: flex; /* Asegura que el contenedor sigue siendo un flexbox */
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+        align-items: center; /* Centra las tarjetas horizontalmente */
+    }
+    
+    .perfilQS {
+        width: 400px;
+        height: 550px;
+        margin: 6px;
     }
 
-    .footer-abajo{
-        position: static;
-        margin-top: 0%;
+    .info-perfilQS {
+        bottom: -150.8px;
+    }
+
+    .info-perfilQS h2 {
+        font-size: 50px;
+    }
+
+    .info-perfilQS p {
+        font-size: 25px;
     }
 
     /* CSS Contacto */
