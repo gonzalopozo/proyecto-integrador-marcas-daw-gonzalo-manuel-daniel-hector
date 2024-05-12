@@ -120,13 +120,19 @@ header ul li a img {
         50%{ transform:translateY(-20px) rotate(3deg) scale(1.1);  }
 }
 
-.contenedor-titulo h1 span:nth-child(2n) {
-    color: hsl(2, 67%, 33%);
-    text-shadow:  1px 1px hsl(2, 75%, 38%), 2px 2px hsl(2, 75%, 38%), 3px 3px hsl(2, 75%, 38%), 4px 4px hsl(2, 92%, 59%);
+.contenedor-titulo .contenedor-blackTemple {
+    display: flex;
+    align-self: center;
 }
- .contenedor-titulo h1 span:nth-child(2n-1) { 
+
+.contenedor-titulo .titulo1 span  {
     color: hsl(213, 100%, 17%);
-    text-shadow:  1px 1px hsl(213, 100%, 37%), 2px 2px hsl(213, 100%, 37%), 3px 3px hsl(213, 100%, 37%), 4px 4px hsl(213, 100%, 42%);
+    text-shadow:  1px 1px hsl(224, 80%, 46%), 2px 2px hsl(246, 82%, 42%), 3px 3px hsl(244, 87%, 40%), 4px 4px hsl(213, 100%, 42%);
+}
+.contenedor-titulo .titulo2 span { 
+    
+    color: hsl(2, 67%, 33%);
+    text-shadow:  1px 1px hsl(0, 49%, 63%), 2px 2px hsl(0, 65%, 61%), 3px 3px hsl(0, 65%, 58%), 4px 4px hsl(0, 75%, 55%);
 }
 
 /* .contenedor-titulo h1 span:nth-child(4n-2) { 
