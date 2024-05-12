@@ -393,7 +393,7 @@ footer {
 
 .contenedor_total{
     display: flex;
-    height: 2300px;
+    height: auto;
 }
 
 .enfrentamiento{
@@ -416,7 +416,7 @@ footer {
     justify-content: center;
     background-color: #002859;
     margin-right: 0%;
-    height: 2200px;
+    height: auto;
 }
 
 .container_horda{
@@ -430,7 +430,7 @@ footer {
     justify-content: center;
     background-color: #8B1F1B;
     margin-left: 0%;
-    height: 2200px;
+    height: auto;
 }
 
 .ficha{
@@ -517,13 +517,18 @@ puede ser p, img, videos , etc., en función de su posición y los situa entre u
     margin-top: 10px;
     /* Insertar tipografía */
 }
-.ficha .info p{
+
+.ficha .info .texto-personajes {
     margin-top: 10px;
     text-align: justify;
     height: 100px;
     overflow: hidden;
-    
 }
+
+.ficha .info .texto-personajes.active-personajes {
+    height: auto;
+}
+
 .container_alianza .ficha .info input{
     display: block;
     padding: 10px 40px;
@@ -1296,7 +1301,7 @@ p{
         display: flex;
         margin-top: 0px;
         flex-wrap: wrap;
-        height: 4400px;
+        height: auto;
     }
     
     .enfrentamiento{
@@ -1319,7 +1324,7 @@ p{
         justify-content: center;
         background-color: #002859;
         margin-right: 0%;
-        height: 4400px;
+        height: auto;
     }
     
     .container_horda{
@@ -1333,7 +1338,7 @@ p{
         justify-content: center;
         background-color: #8B1F1B;
         margin-left: 0%;
-        height: 4400px;
+        height: auto;
     }
     
     
@@ -1737,7 +1742,7 @@ p{
         display: flex;
         margin-top: 0px;
         flex-wrap: wrap;
-        height: 8800px;
+        height: auto;
     }
     
     .enfrentamiento{

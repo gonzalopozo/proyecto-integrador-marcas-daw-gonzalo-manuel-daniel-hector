@@ -1,3 +1,4 @@
+
 function toggleMenu(){
     var menuToggle = document.querySelector('.toggle');
     var navegacion = document.querySelector('.navegacion');
@@ -9,31 +10,29 @@ function subir() {
     window.scrollTo(0, 0);
 }
 
-// Wrap every letter in a span
-// var textWrapper = document.querySelector('.ml1 .letters');
-// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-// anime.timeline({loop: true})
-//   .add({
-//     targets: '.ml1 .letter',
-//     scale: [0.3,1],
-//     opacity: [0,1],
-//     translateZ: 0,
-//     easing: "easeOutExpo",
-//     duration: 600,
-//     delay: (el, i) => 70 * (i+1)
-//   }).add({
-//     targets: '.ml1 .line',
-//     scaleX: [0,1],
-//     opacity: [0.5,1],
-//     easing: "easeOutExpo",
-//     duration: 700,
-//     offset: '-=875',
-//     delay: (el, i, l) => 80 * (l - i)
-//   }).add({
-//     targets: '.ml1',
-//     opacity: 0,
-//     duration: 1000,
-//     easing: "easeOutExpo",
-//     delay: 1000
-//   });
+document.addEventListener("DOMContentLoaded", function() {
+    // Se ejecuta cuando la página se carga por completo
+
+    var botones = document.querySelectorAll('.boton-personajes');
+
+    // Iterar sobre cada botón
+    botones.forEach(function(boton) {
+        // Agregar evento click al botón actual
+        boton.addEventListener("click", function(event) {
+            // Prevenir el comportamiento predeterminado del botón (llevar al principio de la página)
+            event.preventDefault();
+
+            // Obtener el contenedor padre del botón actual
+            var contenedorPadre = boton.closest('.ficha');
+
+            // Encontrar el elemento de texto de personajes dentro del contenedor padre
+            var textoPersonajes = contenedorPadre.querySelector('.texto-personajes');
+
+            // Alternar clase al texto de personajes asociado al botón actual
+            if (textoPersonajes) {
+                textoPersonajes.classList.toggle('active-personajes');
+            }
+        });
+    });
+});
