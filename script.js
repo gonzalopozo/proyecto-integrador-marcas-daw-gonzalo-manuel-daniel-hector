@@ -1,4 +1,3 @@
-
 function toggleMenu(){
     var menuToggle = document.querySelector('.toggle');
     var navegacion = document.querySelector('.navegacion');
@@ -9,7 +8,6 @@ function toggleMenu(){
 function subir() {
     window.scrollTo(0, 0);
 }
-
 
 document.addEventListener("DOMContentLoaded", function() {
     // Se ejecuta cuando la página se carga por completo
