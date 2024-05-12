@@ -258,10 +258,10 @@ header ul li a img {
 }
 
 .contenedor-horda-imagen img {
-    width:100%;
-    position: relative; /*Cambiar esto */
-    left:20px;
-    top: 67px;
+    width: 89.5%;
+    position: relative;
+    left: 25px;
+    top: 45px;
 }
 
 .contenedor-alianza-texto h1 {
@@ -477,38 +477,7 @@ footer {
     top: 0px;
     filter: none;
 }
-/*.ficha .img_back{
-    width: 100%;
-    height: 200px;
-    position: absolute;
-    bottom:-80px;
-    left: 0px;
-    background-size: cover;
-    border-radius: 20px;
-    transition: all ease 300ms;
-}
-Pseudo_clase :nth-of-type() en CSS, selecciona uno o más elementos de un tipo dado,
-puede ser p, img, videos , etc., en función de su posición y los situa entre un grupo de hermanos 
-.ficha:nth-of-type(1) .img_back{
-    background-image: url(img/enano.jpg);
-}
-.ficha:nth-of-type(2) .img_back{
-    background-image: url(img/fondo-galaxia-acuarela-pintada-mano_52683-63443.avif);
-}
-.ficha:nth-of-type(3) .img_back{
-    background-image: url(img/fondo-galaxia-acuarela-pintada-mano_52683-63443.avif);
-}
-.ficha:nth-of-type(4) .img_back{
-    background-image: url(img/fondo-galaxia-acuarela-pintada-mano_52683-63443.avif);
-}
-.ficha:nth-of-type(5) .img_back{
-    background-image: url(img/fondo-galaxia-acuarela-pintada-mano_52683-63443.avif);
-}
-.ficha:hover .img_back{
-    bottom: -40px;
-    border-radius: 20px;
-}
-*/
+
 .ficha .info{
     background: whitesmoke;
     margin-top: -10px;
@@ -1111,11 +1080,11 @@ p{
     }
 
     .contenedor-alianza-imagen img {
-        top: 106px;
+        top: 102px;
     }
     
     .contenedor-horda-imagen img {
-        top: 122px;
+        top: 102px;
     }
 
     .contenedor-expansiones {
@@ -1257,7 +1226,7 @@ p{
         width: auto;
         height: 85px;
         left: 90%;
-        top: -58%;
+        top: -69%;
     }
 
     .contenedor-noticias {
@@ -1582,7 +1551,7 @@ p{
     .contenedor-horda {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
-        height: 620px;
+        height: auto;
     }
 
     
@@ -1620,8 +1589,9 @@ p{
 @media (max-width: 576px) {
 
     .contenedor-titulo h1 span {
-        font-size: 104px;
+        font-size: 84%;
     }
+    
     header {
         padding: 20px;
     }
@@ -1720,15 +1690,15 @@ p{
     }
 
     .contenedor-alianza-imagen img {
-        top: 1.8%;
+        top: 0.8%;
         left: 30%;
-        height: 234px;
+        height: 28.5vh;
     }
 
     .contenedor-horda-imagen img {
-        top: 28.3%;
-        left: 15%;
-        height: 234px;
+        top: 27.3%;
+        left: 17%;
+        height: 28.5vh;
     }
 
     .contenedor-horda-texto h1 {
@@ -1742,7 +1712,7 @@ p{
 
     #hordaPeq {
         left: 86%;
-        top: -69%;
+        top: -65%;
     }
 
     .contenedor_total{
