@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO Titulo de Productos -->
     <title>Productos Black Temple</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./icon/favicon.png">
+    <!-- TODO Agregar CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- TODO Agregar JS -->
     <script src="./script.js"></script>
 </head>
 <body>
+    <!-- TODO Header -->
     <header id="header">
+        <!-- ! Icono de la barra de navegacion -->
         <div class="toggle" onclick="toggleMenu();"></div>
-
+        <!-- ! Barra de navegacion -->
         <ul class="navegacion">
+            <!-- ! Logo de la BLACK TEMPLE -->
             <li><a href="index.html"><img src="./icon/BlackTTempleSVG.svg" alt="ogro logo"></a></li>
             <li><a href="expansiones.html">Expansiones</a></li>
             <li><a href="personajes.html">Personajes</a></li>
@@ -24,19 +30,19 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </header>
-
+    <!-- TODO Main del apartado de Productos -->
     <main>
-
+        <!-- ! Titulo de la seccion de Productos -->
         <h1 id="titulo">PRODUCTOS</h1>
-
+        <!-- ! Contenedor Principal de las cartas -->
         <section class="contenedor-cards">
+            <!-- ! Carta de la Base Edition -->
             <div class="card">
                 <!-- Parte delantera de la carta -->
                 <div class="face front">
                     <img src="img/edicionBase.png" alt="edicion base">
                     <h3>Base Edition - 49,99 €</h3>
                 </div>
-        
                 <!-- Parte trasera de la carta -->
                 <div class="face back">
                     <h3>Base Edition</h3>
@@ -46,14 +52,13 @@
                     <div class="link"><a href="#"></a>Más información</div>
                 </div>
             </div>
-
+            <!-- ! Carta de la Heroic Edition -->
             <div class="card">
                 <!-- Parte delantera de la carta -->
                 <div class="face front">
                     <img src="img/edicionheroic.png" alt="heroic edition">
                     <h3>Heroic Edition - 69,99 €</h3>
                 </div>
-        
                 <!-- Parte trasera de la carta -->
                 <div class="face back">
                     <h3>Heroic Edition</h3>
@@ -63,14 +68,13 @@
                     <div class="link"><a href="#"></a>Más información</div>
                 </div>
             </div>
-
+            <!-- ! Carta de la Epic Edition -->
             <div class="card">
                 <!-- Parte delantera de la carta -->
                 <div class="face front">
                     <img src="img/epicedicion.jpeg" alt="epic edition">
                     <h3>Epic Edition - 89,99 €</h3>
                 </div>
-        
                 <!-- Parte trasera de la carta -->
                 <div class="face back">
                     <h3>Epic Edition</h3>
@@ -80,24 +84,41 @@
                     <div class="link"><a href="#"></a>Más información</div>
                 </div>
             </div>
+            <!-- ? Estructura de las Cartas de las Ediciones -->
+            <!-- <div class="card"> Contenedor de la carta
+                <div class="face front"> Clase de la parte delantera de la carta
+                    <img src="img/edicionheroic.png" alt="heroic edition"> Imagen de la edicion
+                    <h3>XXXXX Edition - 59,99 €</h3> Titulo de la edicion y Precio
+                </div>
+                <div class="face back"> Clase de la parte trasera de la carta
+                    <h3>Nombre de la edicion</h3>
+                    <p>
+                        Descripcion del contenido de la edicion
+                    </p>
+                    <div class="link"><a href="#"></a>Más información</div> Enlace a la pagina de la edicion
+                </div>
+            </div> -->
         </section>
-
+        <!-- ! Boton de subir -->
         <div class="boton-up">
             <a onclick="subir()"><img src="./img/flecha-up.png" alt="flecha-up"></a>
         </div>
-
+        <!-- ! Contenedor de las Monturas -->
         <div class="contenedor-monturas">
+            <!-- TODO Titulo del Apartado de Monturas-->
             <h2>MONTURAS</h2>
+            <!-- ! Contenedor de las Monturas -->
             <div class="contenedor-monturas-grid">
                 <div>
+                    <!-- ! Primera Montura -->
                     <div class="contenedor-imagen">
                         <img src="./img/monturaCerdo.png" alt="montura cerdo">
                     </div>
                     <h4>Cerdo Volador - 20 €</h4>
-                    <p>Surca los cielos encima de un porcino</p>
-                    
+                    <p>Surca los cielos encima de un porcino</p>   
                 </div>
                 <div>
+                    <!-- ! Segunda Montura-->
                     <div class="contenedor-imagen">
                         <img src="./img/monturaConejo.png" alt="montura conejo">
                     </div>
@@ -105,6 +126,7 @@
                     <p>Recorre el mundo a lomos de un conejo de otra galaxia</p>
                 </div>
                 <div>
+                    <!-- ! Tercera Montura -->
                     <div class="contenedor-imagen">
                         <img src="./img/monturaCuervo.png" alt="montura cuervo">
                     </div>
@@ -112,6 +134,7 @@
                     <p>Viaja subido en este ave espeluznante</p>
                 </div>
                 <div>
+                    <!-- ! Cuarta Montura -->
                     <div class="contenedor-imagen">
                         <img src="./img/monturaEspacial.png" alt="montura espacial">
                     </div>
@@ -119,6 +142,7 @@
                     <p>Que mejor transporte que el último modelo de nave espacial</p>
                 </div>
                 <div>
+                    <!-- ! Quinta Montura -->
                     <div class="contenedor-imagen">
                         <img src="./img/monturaGato.png" alt="montura gato">
                     </div>
@@ -126,6 +150,7 @@
                     <p>Lo creas o no, los gatos tambén vuelan</p>
                 </div>
                 <div>
+                    <!-- ! Sexta Montura -->
                     <div class="contenedor-imagen">
                         <img src="./img/monturaRaton.png" alt="montura raton">
                     </div>
@@ -133,20 +158,31 @@
                     <p>En Ventormenta y Orgrimmar hay muchas ratas, pero ninguna tan grande como el nwjidabwa</p>
                 </div>
             </div>
+            <!-- ? Estructura de las Monturas -->
+            <!-- <div class="contenedor-monturas-grid"> Contenedor de las monturas
+                <div>
+                    <div class="contenedor-imagen"> Contenedor de la imagen
+                        <img src="./img/monturaCerdo.png" alt="montura cerdo"> Imagen de la montura
+                    </div>
+                    <h4>Cerdo Volador - 20 €</h4> Titulo de la montura y Precio
+                    <p>Surca los cielos encima de un porcino</p> Descripcion de la montura 
+                </div> -->
         </div>
-
+        <!-- ! Contenedor de las Mascotas -->
         <div class="contenedor-mascotas">
-            <h2>mascotas</h2>
+            <!-- ! Titulo del Apartado de Mascotas-->
+            <h2>MASCOTAS</h2>
+            <!-- ! Primera Mascota -->
             <div class="contenedor-mascotas-grid">
                 <div>
                     <div class="contenedor-imagen">
                         <img src="./img/ragnaros.png" alt="ragnaros">
                     </div>
                     <h4>Ragnaros - 5 €</h4>
-                    <p>El titán elemental Ragnaros, pero chiquito</p>
-                    
+                    <p>El titán elemental Ragnaros, pero chiquito</p>   
                 </div>
                 <div>
+                    <!-- ! Segunda Mascota-->
                     <div class="contenedor-imagen">
                         <img src="./img/perezoso.png" alt="perezoso">
                     </div>
@@ -154,6 +190,7 @@
                     <p>Felicidades, hay una mascota casi tan vaga como tú</p>
                 </div>
                 <div>
+                    <!-- ! Tercera Mascota -->
                     <div class="contenedor-imagen">
                         <img src="./img/yeti.png" alt="yeti">
                     </div>
@@ -161,6 +198,7 @@
                     <p>Este hombre de las nieves no es tan abominable como te habían contado</p>
                 </div>
                 <div>
+                    <!-- ! Cuarta Mascota -->
                     <div class="contenedor-imagen">
                         <img src="./img/murloc.png" alt="murloc">
                     </div>
@@ -168,6 +206,7 @@
                     <p>Si te gustan los bichos feos, este es para ti</p>
                 </div>
                 <div>
+                    <!-- ! Quinta Mascota -->
                     <div class="contenedor-imagen">
                         <img src="./img/ursoc.png" alt="ursoc">
                     </div>
@@ -175,6 +214,7 @@
                     <p>A quien no le gusta un oso polar mejorado</p>
                 </div>
                 <div>
+                    <!-- ! Sexta Mascota -->
                     <div class="contenedor-imagen">
                         <img src="./img/perro.png" alt="perro">
                     </div>
@@ -183,10 +223,19 @@
                 </div>
             </div>
         </div>
+        <!-- ? Estructura de las Mascotas -->
+        <!-- <div>
+            <div class="contenedor-imagen"> Contenedor de la imagen
+                <img src="./img/ursoc.png" alt="ursoc"> Imagen de la mascota
+            </div>
+            <h4>Ursoc - 5 €</h4> Titulo de la mascota y Precio
+            <p>A quien no le gusta un oso polar mejorado</p> Descripcion de la mascota
+        </div> -->
     </main>
-
+    <!-- TODO Footer -->
     <footer>
-        <div class="logo-footer">
+        <!-- ! Clase del Logo del Footer -->
+        <div class="logo-footer"> 
             <a href=""><img src="./icon/BlackTTempleSVG.svg" alt="orco logo"></a>
         </div>
         <p class="copyright">

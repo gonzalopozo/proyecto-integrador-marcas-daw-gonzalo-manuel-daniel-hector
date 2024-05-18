@@ -1,69 +1,69 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-    scroll-behavior: smooth;
+    box-sizing: border-box; /* Caja de borde */
+    margin: 0; /* Margen */
+    padding: 0; /* Relleno */
+    font-family: "Roboto", sans-serif; /* Fuente */
+    scroll-behavior: smooth; /* Comportamiento de desplazamiento */
 }
 
-/* TODO:   */
+/* TODO:*/
 
 body {
-    background-color: #FDF0D1;
+    background-color: #FDF0D1; /* Color de fondo */
 }
 
 #titulo {
-    font-family: "Bebas Neue", sans-serif;
-    text-align: center;
-    font-size: 60px;
-    margin: 30px 0 10px 0;
-    letter-spacing: 3px;
+    font-family: "Bebas Neue", sans-serif; /* Fuente */
+    text-align: center; /* Alineación de texto */
+    font-size: 60px;    /* Tamaño de fuente */
+    margin: 30px 0 10px 0;  /* Margen */
+    letter-spacing: 3px; /* Espaciado entre letras */
 }
 
 header {
-    width: 100%;
+    width: 100%; /* Ancho */
 }
 
 header ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+    display: flex; /* Flexbox */
+    justify-content: center; /* Justificar contenido */
+    list-style: none; /* Lista sin viñetas */
 }
 
 header ul li {
-    padding: 15px 30px 0 30px;
+    padding: 15px 30px 0 30px; /* Relleno */
     
 }
 
 header ul li a {
-    text-decoration: none;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 24px;
+    text-decoration: none; /* Decoración de texto */
+    font-family: "Bebas Neue", sans-serif; /* Fuente */
+    font-size: 24px; /* Tamaño de fuente */
 }
 
 header ul li a:visited{
-    color:black;
+    color:black; /* Color de texto */
 }
 
 header ul li a:link {
-    color: black;
+    color: black; /* Color de texto */
 }
 
 header ul li a img {
-    width: auto;
-    height: 70px;
-    margin-top: -12px;
+    width: auto; /* Ancho */
+    height: 70px; /* Altura */
+    margin-top: -12px; /* Margen superior */
 }
 
 .boton-up{
-    z-index: 5;
-    position: fixed;
-    bottom: 50px;
-    right: 70px;
+    z-index: 5; /* Índice z */
+    position: fixed; /* Fijo */
+    bottom: 50px; /* Abajo */
+    right: 70px; /* Derecha */
 }
 
 .boton-up a img {
-    cursor: pointer;
+    cursor: pointer; /* Cursor */
 }
 
 /* .contenedor-titulo {
@@ -77,11 +77,11 @@ header ul li a img {
 
 
 .contenedor-titulo {
-    display: flex;
-    flex-direction: column;
-    width: 900px;
-    margin: 80px auto 0 auto;
-    text-align: center;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Dirección de la columna */
+    width: 900px; /* Ancho */
+    margin: 80px auto 0 auto; /* Margen */
+    text-align: center; /* Alineación de texto */
 }
 
 /* .contenedor-titulo h1 {
@@ -94,45 +94,45 @@ header ul li a img {
 }*/
 
 .contenedor-titulo h1 {
-    font-size:5em;
-    user-select:none;
+    font-size:5em; /* Tamaño de fuente */
+    user-select:none; /* No seleccionable */
 }
 
 .contenedor-titulo h1 span { 
-    display:inline-block; 
-    animation:float .3s ease-in-out infinite; 
-    font:bold 7.5vw/1.6 "Bebas Neue", sans-serif;
+    display:inline-block; /* Bloque en línea */ 
+    animation:float .3s ease-in-out infinite;  /* Animación */
+    font:bold 7.5vw/1.6 "Bebas Neue", sans-serif; /* Fuente */
 }
     
-@keyframes float {  
-    0%,100%{ transform:none; }
-    33%{ transform:translateY(-1px) rotate(-2deg); }
-    66%{ transform:translateY(1px) rotate(2deg); }
+@keyframes float { 
+    0%,100%{ transform:none; } /* Transformación */
+    33%{ transform:translateY(-1px) rotate(-2deg); } /* Transformación del Eje Y */
+    66%{ transform:translateY(1px) rotate(2deg); } /* Transformación del Eje Y*/
 }
 
 .contenedor-titulo:hover span { 
-    animation:bounce .6s; 
+    animation:bounce .6s; /* Animación */
 }
 
 @keyframes bounce {
         0%,100%{ transform:translate(0); }
-        25%{ transform:rotateX(20deg) translateY(2px) rotate(-3deg); }
-        50%{ transform:translateY(-20px) rotate(3deg) scale(1.1);  }
+        25%{ transform:rotateX(20deg) translateY(2px) rotate(-3deg); } /* Transformación del Eje X */
+        50%{ transform:translateY(-20px) rotate(3deg) scale(1.1);  } /* Transformación del Eje Y */
 }
 
 .contenedor-titulo .contenedor-blackTemple {
-    display: flex;
-    align-self: center;
+    display: flex; /* Flexbox */
+    align-self: center; /* Alineación */
 }
 
 .contenedor-titulo .titulo1 span  {
-    color: hsl(213, 100%, 17%);
-    text-shadow:  1px 1px hsl(224, 80%, 46%), 2px 2px hsl(246, 82%, 42%), 3px 3px hsl(244, 87%, 40%), 4px 4px hsl(213, 100%, 42%);
+    color: hsl(213, 100%, 17%); /* Color de texto */
+    text-shadow:  1px 1px hsl(224, 80%, 46%), 2px 2px hsl(246, 82%, 42%), 3px 3px hsl(244, 87%, 40%), 4px 4px hsl(213, 100%, 42%); /* Sombra de texto */
 }
 .contenedor-titulo .titulo2 span { 
     
-    color: hsl(2, 67%, 33%);
-    text-shadow:  1px 1px hsl(0, 49%, 63%), 2px 2px hsl(0, 65%, 61%), 3px 3px hsl(0, 65%, 58%), 4px 4px hsl(0, 75%, 55%);
+    color: hsl(2, 67%, 33%); /* Color de texto */
+    text-shadow:  1px 1px hsl(0, 49%, 63%), 2px 2px hsl(0, 65%, 61%), 3px 3px hsl(0, 65%, 58%), 4px 4px hsl(0, 75%, 55%); /* Sombra de texto */
 }
 
 /* .contenedor-titulo h1 span:nth-child(4n-2) { 
@@ -145,6 +145,8 @@ header ul li a img {
     text-shadow:1px 1px hsl(26, 80%, 6%), 2px 2px hsl(26, 80%, 6%), 3px 3px hsl(26, 80%, 6%), 4px 4px hsl(26, 80%, 6%);
 }  */
 
+/*Estas líneas de código CSS aplican animaciones con retrasos incrementales de 0.05 segundos a cada <span> hijo directo del elemento <h1> 
+dentro de un contenedor con la clase contenedor-titulo. Esto posiblemente crea un efecto de entrada escalonada para cada letra o fragmento de texto dentro del <h1>.*/
 .contenedor-titulo h1 span:nth-child(2){ animation-delay:.05s; }
 .contenedor-titulo h1 span:nth-child(3){ animation-delay:.1s; }
 .contenedor-titulo h1 span:nth-child(4){ animation-delay:.15s; }
@@ -160,71 +162,71 @@ header ul li a img {
 .contenedor-titulo h1 span:nth-child(14){ animation-delay:.65s; }
 
 .contenedor-titulo h2 {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 48px;
+    font-family: "Bebas Neue", sans-serif; /* Fuente */
+    font-size: 48px; /* Tamaño de fuente */
 }
 
 .contenedor-titulo h3 {
-    margin-top: 10px;
-    align-self: center;
-    font-size: 24px;
+    margin-top: 10px; /* Margen superior */
+    align-self: center; /* Alineación */
+    font-size: 24px; /* Tamaño de fuente */
 }
 
 .contenedor-alianza-padre {
-    background-color: #002859;
-    width: 100%;
-    color: white;
+    background-color: #002859; /* Color de fondo */
+    width: 100%; /* Ancho */
+    color: white; /* Color de texto */
     /* margin-top: 80px; */
 }
 
 .contenedor-horda-padre {
-    background-color: #8B1F1B;
-    width: 100%;
-    color: white;
+    background-color: #8B1F1B; /* Color de fondo */
+    width: 100%; /* Ancho */
+    color: white;   /* Color de texto */
     /* margin-top: 80px; */
 }
 
 .barra-separadora {
-    border: 10px solid #FDF0D1;
+    border: 10px solid #FDF0D1; /* Borde */
 }
 
 .contenedor-alianza {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 70% 30%;
-    grid-gap: 10px; 
-    width: 85%;
-    height: 400px;
-    margin: 80px auto 0 auto;
-    padding: 30px 0 30px 0;
+    display: grid; /* Grid */
+    grid-template-rows: 1fr; /* Plantilla de filas */
+    grid-template-columns: 70% 30%; /* Plantilla de columnas */
+    grid-gap: 10px;  /* Espacio entre columnas */
+    width: 85%; /* Ancho */
+    height: 400px; /* Altura */
+    margin: 80px auto 0 auto; /* Margen */
+    padding: 30px 0 30px 0; /* Relleno */
 }
 
 .contenedor-horda {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 30% 70%;
-    grid-gap: 10px; 
+    display: grid; /* Grid */
+    grid-template-rows: 1fr; /* Plantilla de filas */
+    grid-template-columns: 30% 70%; /* Plantilla de columnas */
+    grid-gap: 10px; /* Espacio entre columnas */
     width: 85%;
     height: 400px;
-    margin: 0 auto 0 auto;
-    padding: 30px 0 30px 0;
+    margin: 0 auto 0 auto; /* Margen */
+    padding: 30px 0 30px 0; /* Relleno */
 }
 
 .contenedor-alianza-texto, .contenedor-horda-texto {
     background-color: #232323;
-    border-radius: 15px;
+    border-radius: 15px; /* Radio de borde */
 }
 
 .contenedor-alianza-imagen, .contenedor-horda-imagen {
     background-color: #232323;
-    border-radius: 15px;
+    border-radius: 15px; /* Radio de borde */
 }
 
 .contenedor-alianza-imagen img{
     width: 50%;
-    position: relative; /*Cambiar esto */
-    left:100px;
-    top: 46px;
+    position: relative; 
+    left:100px; 
+    top: 46px; 
 }
 
 .contenedor-alianza-logo img{
@@ -269,7 +271,7 @@ header ul li a img {
     margin-left: 15px;
     background: linear-gradient(to right, rgb(85, 158, 241), rgb(243, 183, 52)); /* Degradado */
     -webkit-background-clip: text; /* Aplicar el fondo solo al texto */
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; /* Color de texto transparente */
 }
 
 .contenedor-horda-texto h1{
@@ -277,11 +279,11 @@ header ul li a img {
     margin-left: 740px;
     background: linear-gradient(to right, #c74641, #8B1F1B); /* Degradado*/
     -webkit-background-clip: text; /* Aplicar el fondo solo al texto */
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; /* Color de texto transparente */
 }
 
 .contenedor-alianza-texto h3, .contenedor-horda-texto h3 {
-    padding: 20px 15px 20px 15px;
+    padding: 20px 15px 20px 15px; /* Relleno */
 }
 
 .contenedor-noticias {
@@ -293,15 +295,15 @@ header ul li a img {
 .contenedor-noticias h2 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 48px;
-    letter-spacing: 2px;
+    letter-spacing: 2px; /* Espaciado entre letras */
     text-align: center;
     margin-bottom: 15px;
 }
 
 .contenedor-noticias-grid {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid; /* Grid */
+    grid-template-rows: 1fr 1fr 1fr 1fr; /* Plantilla de filas */
+    grid-template-columns: 1fr 1fr 1fr; /* Plantilla de columnas */
     gap: 15px;
     text-align: center;
     width: 65%;
@@ -313,14 +315,14 @@ header ul li a img {
 
 .contenedor-noticias-grid div {
     background-color: #41b06e;
-    border-radius: 15px;
-    display: flex;
+    border-radius: 15px; /* Radio de borde */
+    display: flex; /* Flexbox */
     flex-direction: column;
 }
 
 .contenedor-noticias-grid div:hover {
     background-color: #141E46;
-    cursor: pointer;
+    cursor: pointer; /* Cursor */
 }
 
 .contenedor-noticias-grid div:hover h4, .contenedor-noticias-grid div:hover p {
@@ -339,7 +341,7 @@ header ul li a img {
     text-align: center;
     width: 80%;
     align-self: center;
-    font-weight: 700;
+    font-weight: 700; /* Grosor de fuente */
     color: rgb(15, 15, 15);
     /* color: #41B06E; */
 }
@@ -348,8 +350,8 @@ header ul li a img {
     width: 80%;
     margin-top: 10px;
     align-self: center;
-    border-radius: 10px;
-    overflow: hidden;
+    border-radius: 10px; /* Radio de borde */
+    overflow: hidden; /* Ocultar desbordamiento */
 }
 
 .contenedor-noticias-grid div:hover .contenedor-imagen {
@@ -372,10 +374,6 @@ footer {
     margin: 15px;
 }
 
-
-
-
-
 /* CSS Expansiones */
 
 .contenedor-guerra-padre {
@@ -392,14 +390,11 @@ footer {
     /* margin-top: 80px; */
 }
 
-
-
-
 /* CSS Personajes */
 
 .contenedor_total{
-    display: flex;
-    height: auto;
+    display: flex; /* Flexbox */
+    height: auto; /* Altura */
 }
 
 .enfrentamiento{
@@ -418,7 +413,7 @@ footer {
     margin: auto;
     margin-top: 100px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Envoltura de flexbox */
     justify-content: center;
     background-color: #002859;
     margin-right: 0%;
@@ -432,8 +427,8 @@ footer {
     margin: auto;
     margin-top: 100px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap; /* Envoltura de flexbox */
+    justify-content: center; /* Justificar contenido */
     background-color: #8B1F1B;
     margin-left: 0%;
     height: auto;
@@ -442,7 +437,7 @@ footer {
 .ficha{
     width: 300px;
     margin: 10px;
-    transition: all ease 300ms;
+    transition: all ease 300ms; /* Transición */
 }
 .ficha:hover{
     width: 350px;
@@ -474,15 +469,15 @@ footer {
     
 }
 .ficha:hover .caratula img{
-    top: 0px;
-    filter: none;
+    top: 0px; 
+    filter: none; 
 }
 
 .ficha .info{
     background: whitesmoke;
     margin-top: -10px;
     padding: 20px;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 20px 20px; /* Radio de borde */
     transition: all ease 300ms;
 }
 .ficha:hover .info{
@@ -495,9 +490,9 @@ footer {
 
 .ficha .info .texto-personajes {
     margin-top: 10px;
-    text-align: justify;
-    height: 100px;
-    overflow: hidden;
+    text-align: justify; /* Alineación de texto */
+    height: 100px; /* Altura */
+    overflow: hidden; /* Ocultar desbordamiento */
 }
 
 .ficha .info .texto-personajes.active-personajes {
@@ -505,15 +500,15 @@ footer {
 }
 
 .container_alianza .ficha .info input{
-    display: block;
+    display: block; /* Bloque */
     padding: 10px 40px;
     margin-top: 20px;
     border: none;
     background: #002859;
     color: white;
     font-size: 14px;
-    cursor: pointer;
-    border-radius: 8px;
+    cursor: pointer; /* Cursor */
+    border-radius: 8px; /* Radio de borde */
     transition: all ease 300ms;
     margin: 20px auto;
 }
@@ -528,7 +523,7 @@ footer {
     font-size: 14px;
     cursor: pointer;
     border-radius: 8px;
-    transition: all ease 300ms;
+    transition: all ease 300ms; /* Transición */
     margin: 20px auto;
 }
 .ficha .info input:hover{
@@ -544,8 +539,8 @@ footer {
 }
 
 .contenedor-cards {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Flexbox */
+    justify-content: center; /* Justificar contenido */
 }
 
 .card{
@@ -597,7 +592,7 @@ footer {
 }
 
 .card .back{
-    transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg); /* Rotación de la Carta */
     background: #252525;
     padding: 15px;
     color: white;
@@ -611,7 +606,7 @@ footer {
 .card .back .link{
     border-top: 1px solid white;
     height: 50px;
-    line-height: 50px;
+    line-height: 50px; /* Altura de línea */
 }
 
 .card .back .link a{
@@ -621,7 +616,7 @@ footer {
 .card .back h3{
     font-size: 30px;
     margin-top: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 2px; /* Espaciado entre letras */
 }
 
 .card .back p{
@@ -629,11 +624,11 @@ footer {
 }
 
 .card:hover .front{
-    transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg); /* Rotación de la Carta en el Eje Y */
 }
 
 .card:hover .back{
-    transform: perspective(600px) rotateY(360deg);
+    transform: perspective(600px) rotateY(360deg); /* Rotación de la Carta en el Eje Y */
 }
 
 .contenedor-monturas {
@@ -645,15 +640,15 @@ footer {
 .contenedor-monturas h2 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 48px;
-    letter-spacing: 2px;
+    letter-spacing: 2px; /* Espaciado entre letras */
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Margen inferior */
 }
 
 .contenedor-monturas-grid {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid; /* Grid */
+    grid-template-rows: 1fr 1fr; /* Plantilla de filas */
+    grid-template-columns: 1fr 1fr 1fr; /* Plantilla de columnas */
     gap: 15px;
     text-align: center;
     width: 65%;
@@ -665,9 +660,9 @@ footer {
 
 .contenedor-monturas-grid div {
     background-color: #252525;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
+    border-radius: 15px; /* Radio de borde */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Dirección de la columna */
 }
 
 .contenedor-monturas-grid div:hover {
@@ -680,7 +675,7 @@ footer {
     font-size: 24px;
     margin: 10px;
     color: white;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.5px; /* Espaciado entre letras */
 }
 
 .contenedor-monturas-grid div p {
@@ -697,7 +692,7 @@ footer {
     max-width: 100%;
     min-height: 50%;
     align-self: center;
-    border-radius: 10px;
+    border-radius: 10px; /* Radio de borde */
     overflow: hidden;
 }
 
@@ -716,8 +711,8 @@ footer {
 .contenedor-mascotas h2 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 48px;
-    letter-spacing: 2px;
-    text-align: center;
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-align: center; 
     margin-bottom: 15px;
 }
 
@@ -738,25 +733,25 @@ footer {
     background-color: #252525;
     border-radius: 15px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Dirección de la columna */
 }
 
 .contenedor-mascotas-grid div:hover {
     background-color: #353535;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .contenedor-mascotas-grid div h4 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 24px;
+    font-size: 24px;  /* Tamaño de fuente */
     margin: 10px;
     color: white;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.5px; /* Espaciado entre letras */
 
 }
 
 .contenedor-mascotas-grid div p {
-    text-align: center;
+    text-align: center; /* Alineación de texto */
     width: 80%;
     align-self: center;
     color: white;
@@ -768,9 +763,9 @@ footer {
     width: 100%;
     max-width: 100%;
     min-height: 65%;
-    align-self: center;
+    align-self: center; /* Alineación */
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden; /* Ocultar desbordamiento */
 }
 
 .contenedor-mascotas-grid div .contenedor-imagen img {
@@ -785,7 +780,7 @@ footer {
 .tituloQS h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 50px;
-    text-align: center;
+    text-align: center; /* Alineación de texto */
     margin-bottom: 15px;
 }
 
@@ -794,7 +789,7 @@ footer {
     margin: 0 auto;
     width: 60%;
     font-family: "Roboto", sans-serif;
-    font-weight: bold;
+    font-weight: bold; /* Grosor de fuente */
     font-size: 20px;
 }
 
@@ -803,7 +798,7 @@ footer {
     width: 264px; 
     height: 319.36px; 
     border-radius: 16px; 
-    overflow: hidden;
+    overflow: hidden; /* Ocultar desbordamiento */
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
     margin: 16px;
 }
@@ -812,11 +807,11 @@ footer {
     width: 100%;
     height: auto;
     object-fit: cover;
-    transition: opacity 0.5s; 
+    transition: opacity 0.5s; /* Transición de la Opacidad*/
 }
 
-.perfilQS:hover img {
-    opacity: 0.6;
+.perfilQS:hover img { /* Al pasar el ratón por encima */
+    opacity: 0.6; /* Opacidad */
 }
 
 .info-perfilQS {
@@ -826,13 +821,13 @@ footer {
     padding: 16px;
     background-color: #fff;
     width: 100%;
-    text-align: left;
+    text-align: left; /* Alineación de texto */
     transition: bottom 0.5s, background-color 0.5s;
     transform-origin: bottom;
     overflow: hidden;
 }
 
-.perfilQS:hover .info-perfilQS {
+.perfilQS:hover .info-perfilQS { /* Al pasar el ratón por encima */
     bottom: 0;
     background-color: #fff;
 }
@@ -855,8 +850,8 @@ footer {
 
 .iconos-socialesQS {
     display: flex;
-    justify-content: center;
-    gap: 12px; 
+    justify-content: center; /* Justificar contenido */
+    gap: 12px; /* Espacio entre elementos */
     margin-top: 16px;
     list-style: none; 
 }
@@ -865,19 +860,19 @@ footer {
     display: block;
     width: 40px; 
     height: 40px;
-    border-radius: 50%;
+    border-radius: 50%; /* Radio de borde */
     background: #fff;
     border: 1px solid #CDCDCD;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-size: cover;
-    transition: transform 0.3s ease;
-    background-image: url('../icon/GHIcon.svg');
+    align-items: center; 
+    background-size: cover; /* Tamaño de fondo */
+    transition: transform 0.3s ease; /* Transición */
+    background-image: url('../icon/GHIcon.svg'); /* Imagen de GITHUB */
 }
 
-.iconos-socialesQS li a:hover {
-    transform: scale(1.5); 
+.iconos-socialesQS li a:hover { /* Al pasar el ratón por encima */
+    transform: scale(1.5);  /* Escala - Aumenta el tamaño */
 }
 
 .contenedorQS {
@@ -895,7 +890,7 @@ footer {
 /* CSS Formulario de Contacto */
 
 .contenedor-formulario{
-    display: block;
+    display: block; 
     margin-top: 100px; 
     margin-bottom: 100px;
 }
@@ -929,12 +924,12 @@ footer {
     text-align: center;
 }
 
-input[type="text"], input[type="password"]{
-    text-align: center;
+input[type="text"], input[type="password"]{ /* Input de Contraseña */
+    text-align: center; /* Alineación de texto */
     font-size: 24px;
-    width: 80%;
+    width: 80%; /* Ancho */
     padding: 10px;
-    border: none;
+    border: none; /* Borde Ninguno*/
 }
 
 .input-contenedor_contacto{
@@ -953,7 +948,7 @@ input[type="text"], input[type="password"]{
     cursor:pointer;
 }
 
-.button:hover{
+.button:hover{ /* Al pasar el ratón por encima */
     background-color: white;
 }
 
@@ -967,9 +962,10 @@ p{
     font-weight: 600px;
 }
 
-.link:hover{
+.link:hover{ /* Al pasar el ratón por encima */
     color:aquamarine
 }
+
 
 @media(min-width:768px){
     .formulario{
@@ -1013,8 +1009,8 @@ p{
 
 .contenedor-expansiones {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; /* Plantilla de filas */
+    grid-template-columns: 1fr 1fr 1fr; /* Plantilla de columnas */
     gap: 15px;
     text-align: center;
     width: 65%;
@@ -1053,16 +1049,16 @@ p{
     width: 100%;
 }
 
-#dani img {
-    height: 40vh;
+#dani img { 
+    height: 40vh; 
 }
 
 #alianzaPeq {
-    display: none;
+    display: none; /* Ocultar */
 }
 
 #hordaPeq {
-    display: none;
+    display: none; /* Ocultar */
 }
 
 @media only screen and (max-width: 1537px) {

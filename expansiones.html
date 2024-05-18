@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- * Título de la página Web -->
     <title>Expansiones Black Temple</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">    
+    <!-- * Importación de las fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- ! Importación del CSS de la página Web -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- * Importación del Favicon -->
     <link rel="shortcut icon" href="./icon/favicon.png">
+    <!-- ! Importación del JavaScript de la página Web -->
     <script src="./script.js"></script>
 </head>
 <body>
+    <!-- * Header de la página Web -->
     <header id="header">
+        <!-- Botón de menú en el momento en el que la Web hace responsive -->
         <div class="toggle" onclick="toggleMenu();"></div>
 
+        <!-- Lista donde se encuentran los apartados de la página Web -->
         <ul class="navegacion">
+            <!-- Logo de la página Web -->
             <li><a href="index.html"><img src="./icon/BlackTTempleSVG.svg" alt="ogro logo"></a></li>
+            <!-- Apartados de la página Web -->
             <li><a href="expansiones.html">Expansiones</a></li>
             <li><a href="personajes.html">Personajes</a></li>
             <li><a href="productos.html">Productos</a></li>
@@ -25,14 +35,16 @@
         </ul>
     </header>
 
+    <!-- ! Contenido de la página de Expansiones Black Temple -->
     <main>
-
-
+        <!-- * Contenedor del video y el título -->
         <div class="contenedor-video-titulo">
+            <!-- * Contenedor del video -->
             <div class="contenedor-video">
-                <iframe  src="https://www.youtube.com/embed/sTTxF6q87Uc" title="⭕ WOW TIME, SUBIENDO AL HUNTER!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/sTTxF6q87Uc" title="⭕ WOW TIME, SUBIENDO AL HUNTER!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
+            <!-- * Contenedor del título y descripción -->
             <div class="contenedor-titulo">
                 <h1>
                     ¡Las islas dragón os esperan!
@@ -44,30 +56,30 @@
             </div>
         </div>
 
+        <!-- * Sección de las expansiones -->
         <section class="contenedor-expansiones">
-            
-    
             <div>
+                <!-- * Contenedor de la imagen de la expansión -->
                 <div class="contenedor-foto">
                     <img src="./img/WoW-Dragonflight.jpg" alt="expansion dragon">
                 </div>
                 <h4>NUEVA HISTORIA, LAS ISLAS DRAGÓN</h4>
-                <p>Arthas, el villano de una historia mal contada, ha decidido acabar con la existencia en la tierra de los malvados Goblins, y los perezosos del bosque intentarán envitarlo a
+                <p>Arthas, el villano de una historia mal contada, ha decidido acabar con la existencia en la tierra de los malvados Goblins, y los perezosos del bosque intentarán evitarlo a
                 toda costa.
                 </p>
             </div>
             <div>
+                <!-- * Contenedor de la imagen de la nueva clase y raza -->
                 <div class="contenedor-foto">
                     <img src="./img/dracthyrs.png" alt="dracthyr">
                 </div>
                 <h4>NUEVA CLASE Y RAZA DISPONIBLE</h4>
-
-                    <p>Los Dracthyr pueden cambiar a voluntar entre sus formas humana y dragonante. Esta nueva raza podrá unirse a la alianza o la horda y forjar su propio destino.
-                    Los evocadores pueden luchar a media distancia con sus garras y aliento de fuego o recurrir a la magia. 
-                    </p>
-                </div>
+                <p>Los Dracthyr pueden cambiar a voluntad entre sus formas humana y dragonante. Esta nueva raza podrá unirse a la alianza o la horda y forjar su propio destino.
+                    Los evocadores pueden luchar a media distancia con sus garras y aliento de fuego o recurrir a la magia.
+                </p>
             </div>
             <div>
+                <!-- * Contenedor de la imagen del sistema de vuelo -->
                 <div class="contenedor-foto">
                     <img src="./img/dragon.jpg" alt="dragon">
                 </div>
@@ -78,20 +90,19 @@
             </div>
         </section>
 
-        
-
-
+        <!-- ! Botón para subir al inicio de la página -->
         <div class="boton-up">
             <a onclick="subir()"><img src="./img/flecha-up.png" alt="flecha-up"></a>
         </div>
-
     </main>
 
-    
+    <!-- ! Footer de la página Web -->
     <footer>
+        <!-- * Logo en el footer -->
         <div class="logo-footer">
             <a href=""><img src="./icon/BlackTTempleSVG.svg" alt="orco logo"></a>
         </div>
+        <!-- * Información de copyright -->
         <p class="copyright">
             ©2024 ElGrup0 Entertainment, Inc.
             Todas las marcas comerciales a las que se hace referencia son propiedad de sus respectivos dueños

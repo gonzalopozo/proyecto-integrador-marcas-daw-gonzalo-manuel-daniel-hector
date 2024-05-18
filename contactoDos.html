@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos Black Temple</title>
+    <title>Contacto Black Temple</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- * Importación de las fuentes de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./icon/favicon.png">
+    <!-- ! Importación del CSS de la página Web -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- ! Importación del JavaScript de la página Web -->
     <script src="./script.js"></script>
 </head>
 <body>
+    <!-- TODO Header de la Web-->
     <header id="header">
+        <!-- TODO Boton de la Barra de Navegacion-->
         <div class="toggle" onclick="toggleMenu();"></div>
-
+        <!-- TODO Barra de Navegacion -->
         <ul class="navegacion">
+            <!-- Logo de la Barra de Navegacion -->
             <li><a href="index.html"><img src="./icon/BlackTTempleSVG.svg" alt="ogro logo"></a></li>
+            <!-- Apartados de la Barra de Navegacion -->
             <li><a href="expansiones.html">Expansiones</a></li>
             <li><a href="personajes.html">Personajes</a></li>
             <li><a href="productos.html">Productos</a></li>
@@ -24,28 +31,41 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </header>
-    
+    <!-- TODO Main de Contacto -->
     <main>
+        <!--! Contenedor del Formulario -->
         <div class="contenedor-formulario">
+            <!-- ! Formulario Login -->
         <form class="formulario">
+            <!-- ! Titulo del Formulario Login-->
             <h1 class="titulo_registro">Login de Usuario</h1>
+            <!-- ! Contenedor de Contacto -->
             <div class="contenedor_contacto">
-            
+                <!-- ! Contendor de los Input -->
                 <div class="input-contenedor_contacto">
+                    <!-- ! Icono de Usuario --> 
                     <img class="icon" alt="icono-usuario" src="icon/usuario-de-perfil.png">
+                    <!-- ! Input de Correo Electronico -->
                     <input type="text" placeholder="Correo electrónico">
                 </div>
+                <!-- ! Contendor Input -->
                 <div class="input-contenedor_contacto">
+                    <!-- ! Icono de Contraseña -->
                     <img class="icon" alt="icono-contraseña" src="icon/contraseña.png">
+                    <!-- ! Input de Contraseña -->
                     <input type="password" placeholder="Contraseña">
                 </div>
+                <!-- ! Boton de Login -->
                 <input type="submit" value="Login" class="button">
+                <!-- ! Texto de Login -->
                 <p class="texto_formulario">Al registrarse, acepta nuestras condiciones de uso y política de privacidad.</p>
+                <!-- ! Texto de Login -->
                 <p class="texto_formulario">¿No tiene una cuenta? <a href="contacto.html" class="link"> Registro</a></p>
             </div>
         </form>
     </div>
     </main>
+    <!-- TODO Footer de la Web -->
     <footer class="footer-abajo">
         <div class="logo-footer">
             <a href=""><img src="./icon/BlackTTempleSVG.svg" alt="logo-orco"></a>
